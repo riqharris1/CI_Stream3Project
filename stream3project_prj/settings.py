@@ -115,6 +115,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_URL=ci-stream3project.herokuapp.com
+
+PAYPAL_NOTIFY_URL=ci-stream3project.herokuapp.com
+
+ALLOWED_HOSTS=ci-stream3project.herokuapp.com
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
