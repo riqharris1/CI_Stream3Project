@@ -672,9 +672,9 @@ Py_NO_ENABLE_SHARED to find out.  Also support MS_NO_COREDLL for b/w compat */
 #endif
 
 /* Define if you have the <fcntl.h> header file. */ 
-/*#ifndef MS_WINCE*/
-/*#define HAVE_FCNTL_H 1*/
-/*#endif*/
+#ifndef MS_WINCE
+#define HAVE_FCNTL_H 1
+#endif
 
 /* Define to 1 if you have the <process.h> header file. */
 #ifndef MS_WINCE
