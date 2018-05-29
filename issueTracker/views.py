@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from django.http import httpResponse
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
@@ -10,6 +11,10 @@ from issueTracker.serializers import issueTrackerSerializer
 from issueTracker.models import issueTracker
 from django.contrib.auth.models import User
 # Create your views here.
+	def index(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, 'index.html')
+
 class issueView(APIView):
     """
     TodoView used to handle the incoming requests relating to 

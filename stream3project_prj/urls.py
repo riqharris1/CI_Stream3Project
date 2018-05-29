@@ -20,7 +20,7 @@ from django.urls import path
 # from .settings import MEDIA_ROOT
 
 urlpatterns = [
-    url(r'^index', issueTracker.urls),
+    url(r'^$', issueTracker.views.index, name='index'),
     url(r'^admin/', admin.site.urls),
 	url(r'^issue/', include('issueTracker.urls'))
 ]
