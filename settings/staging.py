@@ -1,4 +1,4 @@
-from base import *
+from settings.base import *
 import os
 import dj_database_url
 import settings
