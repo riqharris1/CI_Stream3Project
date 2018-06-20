@@ -36,18 +36,18 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=255)),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
-                ('subject', models.ForeignKey(related_name='threads', to='threads.Subject')),
-                ('user', models.ForeignKey(related_name='threads', to=settings.AUTH_USER_MODEL)),
+                ('subject', models.ForeignKey(related_name='threads', to='threads.Subject', on_delete=models.CASCADE,)),
+                ('user', models.ForeignKey(related_name='threads', to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE,)),
             ],
         ),
         migrations.AddField(
             model_name='posts',
             name='thread',
-            field=models.ForeignKey(related_name='posts', to='threads.Thread'),
+            field=models.ForeignKey(related_name='posts', to='threads.Thread', on_delete=models.CASCADE,),
         ),
         migrations.AddField(
             model_name='posts',
             name='user',
-            field=models.ForeignKey(related_name='posts', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(related_name='posts', to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE,),
         ),
     ]

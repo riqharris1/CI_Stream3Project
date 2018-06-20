@@ -15,13 +15,14 @@ class Magazine(models.Model):
 
 class Purchase(models.Model):
 
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='purchases')
-    magazine = models.ForeignKey(Magazine)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='purchases',on_delete=models.CASCADE,)
+    magazine = models.ForeignKey(Magazine,on_delete=models.CASCADE,)
     subscription_end = models.DateTimeField(default=timezone.now)
 
 
 # To avoid an "apps not loaded" error the import from signals is placed at the bottom of file
-from signals import subscription_created, subscription_was_cancelled
+#from signals import *
+from magazines.signals import subscription_created, subscription_was_cancelled
 from paypal.standard.ipn.signals import valid_ipn_received
 
 valid_ipn_received.connect(subscription_created)

@@ -8,6 +8,7 @@ class Subject(models.Model):
 
     name = models.CharField(max_length=255)
     description = HTMLField()
+    #author = models.ForeignKey(settings.AUTH_USER_MODEL)
 
     def __unicode__(self):
         return self.name
@@ -16,15 +17,16 @@ class Subject(models.Model):
 class Thread(models.Model):
 
     name = models.CharField(max_length=255)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,
-                             related_name='threads')
-    subject = models.ForeignKey(Subject, related_name='threads')
+    user = models.ForeignKey(Subject,related_name='threads', on_delete=models.CASCADE,)
+    subject = models.ForeignKey(Subject, related_name='user',on_delete=models.CASCADE,)
     created_at = models.DateTimeField(default=timezone.now)
 
 
 class Post(models.Model):
 
-    thread = models.ForeignKey(Thread, related_name='posts')
+    thread = models.ForeignKey(Thread, related_name='posts',on_delete=models.CASCADE,)
     comment = HTMLField(blank=True)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='posts')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='posts',on_delete=models.CASCADE,)
     created_at = models.DateTimeField(default=timezone.now)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='threads',on_delete=models.CASCADE,)
+  

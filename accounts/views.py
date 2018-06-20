@@ -2,14 +2,15 @@ from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
 from accounts.forms import UserRegistrationForm, UserLoginForm
-from django.core.urlresolvers import reverse
+from django.urls import reverse
+#from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
 from django.conf import settings
 import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-from models import User
+from accounts.models import User
 import stripe
 import arrow
 import json
@@ -46,7 +47,7 @@ def register(request):
                 else:
                     messages.error(request, "We were unable to take payment from the card provided")
 
-            except stripe.error.CardError, e:
+            except stripe.error.CardError:
                 messages.error(request, "Your card was declined!")
     else:
         today = datetime.date.today()
@@ -63,7 +64,7 @@ def cancel_subscription(request):
         customer = stripe.Customer.retrieve(request.user.stripe_id)
 
         customer.cancel_subscription(at_period_end=True)
-    except Exception, e:
+    except Exception:
         messages.error(request, e)
 
     return redirect('profile')
@@ -88,7 +89,7 @@ def subscriptions_webhook(request):
             user.subscription_end = arrow.now().replace(weeks=+4).datetime  # add 4 weeks from now
             user.save()
 
-    except stripe.InvalidRequestError, e:
+    except stripe.InvalidRequestError:
         return HttpResponse(status=404)
 
     return HttpResponse(status=200)

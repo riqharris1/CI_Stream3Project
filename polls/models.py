@@ -6,7 +6,7 @@ from threads.models import Thread
 class Poll(models.Model):
 
     question = models.TextField()
-    thread = models.OneToOneField(Thread, null=True)
+    thread = models.OneToOneField(Thread, null=True,on_delete=models.CASCADE,)
 
     def __unicode__(self):
         return self.question
@@ -15,7 +15,7 @@ class Poll(models.Model):
 class PollSubject(models.Model):
 
     name = models.CharField(max_length=255)
-    poll = models.ForeignKey(Poll, related_name='subjects')
+    poll = models.ForeignKey(Poll, related_name='subjects',on_delete=models.CASCADE,)
 
     def __unicode__(self):
         return self.name
@@ -23,6 +23,6 @@ class PollSubject(models.Model):
 
 class Vote(models.Model):
 
-    poll = models.ForeignKey(Poll, related_name="votes")
-    subject = models.ForeignKey(PollSubject, related_name="votes")
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='votes')
+    poll = models.ForeignKey(Poll, related_name="votes",on_delete=models.CASCADE,)
+    subject = models.ForeignKey(PollSubject, related_name="votes",on_delete=models.CASCADE,)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='votes',on_delete=models.CASCADE,)

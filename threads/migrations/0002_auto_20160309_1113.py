@@ -21,8 +21,8 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('comment', tinymce.models.HTMLField(blank=True)),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
-                ('thread', models.ForeignKey(related_name='posts', to='threads.Thread')),
-                ('user', models.ForeignKey(related_name='posts', to=settings.AUTH_USER_MODEL)),
+                ('thread', models.ForeignKey(related_name='posts', to='threads.Thread', on_delete=models.CASCADE,)),
+                ('user', models.ForeignKey(related_name='posts', to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE,)),
             ],
         ),
         migrations.RemoveField(
