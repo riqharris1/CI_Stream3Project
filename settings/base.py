@@ -22,7 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'django_forms_bootstrap',
+    #'django_forms_bootstrap',
     'paypal.standard.ipn',
     'rest_framework',
     'tinymce',
