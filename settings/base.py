@@ -1,5 +1,5 @@
 import os
-import django_forms_bootstrap
+import django-forms-bootstrap
 import paypal
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
