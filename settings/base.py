@@ -1,4 +1,6 @@
 import os
+import django_forms_bootstrap
+import paypal
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django_forms_bootstrap',
-    #'django.forms.bootstrap',
     'paypal.standard.ipn',
     'rest_framework',
     'tinymce',
