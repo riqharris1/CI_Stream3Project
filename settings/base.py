@@ -23,8 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'django_forms_bootstrap',
-    'paypal.standard.ipn',
     'rest_framework',
     'tinymce',
     'emoticons',
@@ -38,6 +36,8 @@ INSTALLED_APPS = [
     'threads',
     'polls',
     'we_are_social',
+    'django_forms_bootstrap',
+    'paypal.standard.ipn',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
