@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'rest_framework',
+    'django.rest.framework',
     'tinymce',
     'emoticons',
     'disqus',
