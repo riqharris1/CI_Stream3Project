@@ -28,6 +28,7 @@ pytz = "*"
 requests = "*"
 six = "*"
 stripe = "*"
+paypal = "*"
 
 
 
