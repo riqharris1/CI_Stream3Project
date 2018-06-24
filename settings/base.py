@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'polls',
     'we_are_social',
     'django_forms_bootstrap',
-    'djangorestframework',
+    'rest_framework',
     'paypal.standard.ipn',
 ]
 
