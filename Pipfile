@@ -29,6 +29,7 @@ requests = "*"
 six = "*"
 stripe = "*"
 paypal = "*"
+paypal.standard = "*"
 
 
 
