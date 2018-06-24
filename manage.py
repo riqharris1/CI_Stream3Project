@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-#env/scripts/activate_this.py
+env/scripts/activate_this.py
 import os
 import sys
 
 if __name__ == "__main__":
+	#os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.base")
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.staging")
     #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.dev")
 
