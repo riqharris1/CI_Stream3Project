@@ -9,7 +9,7 @@ verify_ssl = true
 django = "*"
 gunicorn = "*"
 django-heroku = "*"
-appdirs==1.4.3
+appdirs = "*"
 arrow==0.10.0
 beautifulsoup4==4.6.0
 disqus==0.0.4
