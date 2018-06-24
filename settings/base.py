@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'we_are_social',
     'django_forms_bootstrap',
     'rest_framework',
-    'paypal_standard_ipn',
+    'django_paypal_standard_ipn',
     #'debug_toolbar'
 ]
 
