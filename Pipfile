@@ -28,7 +28,7 @@ pytz = "*"
 requests = "*"
 six = "*"
 stripe = "*"
-django-paypal = "*"
+django-paypal-standard-ipn = "*"
 
 
 
