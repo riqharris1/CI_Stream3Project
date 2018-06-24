@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-Stream3Project/env/bin/python manage.py runserver
+#Stream3Project/env/bin/python manage.py runserver
 import os
 import sys
 
