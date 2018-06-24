@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'djangorestframework',
     'tinymce',
     'emoticons',
     'disqus',
@@ -37,6 +36,7 @@ INSTALLED_APPS = [
     'polls',
     'we_are_social',
     'django_forms_bootstrap',
+    'djangorestframework',
     'paypal.standard.ipn',
 ]
 
