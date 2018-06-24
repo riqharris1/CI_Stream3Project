@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-env/scripts/activate_this.py
+Stream3Project/env/bin/python manage.py runserver
 import os
 import sys
 
