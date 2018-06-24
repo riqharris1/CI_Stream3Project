@@ -23,6 +23,22 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'tinymce',
+    'emoticons',
+    'disqus',
+    'reusable_blog',
+    'home',
+    'accounts',
+    'paypal_store',
+    'products',
+    'magazines',
+    'threads',
+    'polls',
+    'we_are_social',
+    'django_forms_bootstrap',
+    'rest_framework',
+    'paypal.standard.ipn',
+    'debug_toolbar'
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
