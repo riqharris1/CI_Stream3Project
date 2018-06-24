@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+env/scripts/activate_this.py
 import os
 import sys
 
