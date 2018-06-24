@@ -1,26 +1,9 @@
-from base import *
+from settings.base import *
 import os
 import dj_database_url
 import settings
 
-INSTALLED_APPS = [
-    'tinymce',
-    'emoticons',
-    'disqus',
-    'reusable_blog',
-    'home',
-    'accounts',
-    'paypal_store',
-    'products',
-    'magazines',
-    'threads',
-    'polls',
-    'we_are_social',
-    'django_forms_bootstrap',
-    'rest_framework',
-    'paypal.standard.ipn',
-    'debug_toolbar'
-]
+
 
 DEBUG = False
 
