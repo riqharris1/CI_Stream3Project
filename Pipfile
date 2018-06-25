@@ -29,6 +29,7 @@ requests = "*"
 six = "*"
 stripe = "*"
 django-paypal = "*"
+django-debug-toolbar = "*"
 
 
 
