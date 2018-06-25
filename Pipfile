@@ -30,7 +30,7 @@ six = "*"
 stripe = "*"
 django-paypal = "*"
 django-debug-toolbar = "*"
-mysql-python = "*"
+
 configparser = "*"
 mysqlclient = "*"
 
