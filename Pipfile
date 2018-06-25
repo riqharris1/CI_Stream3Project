@@ -33,6 +33,7 @@ django-debug-toolbar = "*"
 
 configparser = "*"
 mysqlclient = "*"
+dj-database-url = "*"
 
 
 
