@@ -17,8 +17,8 @@ class Subject(models.Model):
 class Thread(models.Model):
 
     name = models.CharField(max_length=255)
-    user = models.ForeignKey(Subject,related_name='threads', on_delete=models.CASCADE,)
-    subject = models.ForeignKey(Subject, related_name='user',on_delete=models.CASCADE,)
+    user = models.ForeignKey(Subject,related_name='accounts', on_delete=models.CASCADE,)
+    subject = models.ForeignKey(Subject, related_name='threads',on_delete=models.CASCADE,)
     created_at = models.DateTimeField(default=timezone.now)
 
 
