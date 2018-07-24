@@ -31,7 +31,7 @@ class User(AbstractUser):
     # in later units we'll be adding things like payment details!
 
     stripe_id = models.CharField(max_length=40, default='')
-    subscription_end = models.CharField(default=timezone.now)
+    subscription_end = models.CharField(max_length=40, default=timezone.now)
     objects = AccountUserManager()
 
     def is_subscribed(self, magazine):
