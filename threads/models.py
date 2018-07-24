@@ -19,7 +19,7 @@ class Thread(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(Subject,related_name='accounts', on_delete=models.CASCADE,)
     subject = models.ForeignKey(Subject, related_name='threads',on_delete=models.CASCADE,)
-    created_at = models.CharField(default=timezone.now)
+    created_at = models.CharField(max_length=255,default=timezone.now)
 
 
 class Post(models.Model):
@@ -27,6 +27,6 @@ class Post(models.Model):
     thread = models.ForeignKey(Thread, related_name='posts',on_delete=models.CASCADE,)
     comment = HTMLField(blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='posts',on_delete=models.CASCADE,)
-    created_at = models.CharField(default=timezone.now)
+    created_at = models.CharField(max_length=255,default=timezone.now)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='threads',on_delete=models.CASCADE,)
   
