@@ -17,7 +17,7 @@ class Purchase(models.Model):
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='purchases',on_delete=models.CASCADE,)
     magazine = models.ForeignKey(Magazine,on_delete=models.CASCADE,)
-    subscription_end = models.CharField(max_length=255, default=timezone.now)
+    subscription_end = models.CharField(max_length=254, default=timezone.now)
 
 
 # To avoid an "apps not loaded" error the import from signals is placed at the bottom of file
