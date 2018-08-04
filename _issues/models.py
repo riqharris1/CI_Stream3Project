@@ -29,7 +29,7 @@ class issue(models.Model):
     title = models.CharField(max_length=100, null=False)
     description = models.CharField(max_length=255, null=False)
     status = models.CharField(max_length=5, choices=STATUS_CHOICES, null=False)
-    updated = models.DateTimeField(default=timezone.now)
+    updated = models.CharField(max_length=100)
  
     def __unicode__(self):
         return self.title

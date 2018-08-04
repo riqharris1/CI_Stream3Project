@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='user',
             name='subscription_end',
-            field=models.DateTimeField(default=django.utils.timezone.now),
+            field=models.CharField(max_length=100),
         ),
     ]
