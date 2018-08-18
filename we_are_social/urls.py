@@ -82,7 +82,7 @@ urlpatterns = [
     url(r'post/delete/(?P<pk>[\d]+)/$',
         thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
 
-    url(r'^issue tracker/$', include('todo.urls'))
+    #url(r'^issue tracker/$', include('todo.urls'))
 ]
 
 if settings.DEBUG:
