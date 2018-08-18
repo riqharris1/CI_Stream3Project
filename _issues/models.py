@@ -25,7 +25,8 @@ class issue(models.Model):
     for an issue item
     """
  
-    user = models.ForeignKey(User, default=1)
+    user = models.ForeignKey(User,)
+    #user = models.ForeignKey(User, default=1)
     title = models.CharField(max_length=100, null=False)
     description = models.CharField(max_length=255, null=False)
     status = models.CharField(max_length=5, choices=STATUS_CHOICES, null=False)

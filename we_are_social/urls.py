@@ -69,7 +69,7 @@ urlpatterns = [
         forum_views.delete_post, name='delete_post'),
     url(r'^thread/vote/(?P<thread_id>\d+)/(?P<subject_id>\d+)/$',
         forum_views.thread_vote, name='cast_vote'),
-
+    url(r'^tinymce/', include('tinymce.urls')),
     # REST URLs
     url(r'^threads/polls/$', api_views.PollViewSet.as_view()),
     url(r'^threads/polls/(?P<pk>[\d]+)$', api_views.PollInstanceView.as_view(),

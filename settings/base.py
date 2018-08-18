@@ -15,6 +15,7 @@ INTERNAL_IPS = ('127.0.0.1',)
 
 # Application definition
 INSTALLED_APPS = [
+    #'admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -34,7 +35,7 @@ INSTALLED_APPS = [
     'magazines',
     'threads',
     'polls',
-    'we_are_social',
+    #'we_are_social',
     'django_forms_bootstrap',
     'rest_framework',
     'paypal.standard.ipn',

@@ -22,7 +22,6 @@ class PollSubject(models.Model):
 
 
 class Vote(models.Model):
-
     poll = models.ForeignKey(Poll, related_name="votes",on_delete=models.CASCADE,)
     subject = models.ForeignKey(PollSubject, related_name="votes",on_delete=models.CASCADE,)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='votes',on_delete=models.CASCADE,)

@@ -1,26 +1,37 @@
 from settings.base import *
 import os
-import dj_database_url
 import settings
+import dj_database_url
 
 
 
 DEBUG = False
 
 # Load the ClearDB connection details from the environment variable
+#DATABASES['default'] =  dj_database_url.config()
 DATABASES = {
-    'default': dj_database_url.config('CLEARDB_MAROON_URL')
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
-}
-
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR ,'db.sqlite3'),
+        #'default': dj_database_url.config('CLEARDB_DATABASE_URL'),
+    }
+}    
+    
+''' 
+#DATABASES = {
+    'default': {
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': os.path.join(BASE_DIR ,'db.sqlite3'),
+    'default': dj_database_url.config('CLEARDB_DATABASE_URL'),
+    }
+} '''
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_nbWefqblVg8HnYsFmpcld8qj')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_N35jP51CRqW4FKBMa8MAL1A4')
 
 # Paypal environment variables
 PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
+PAYPAL_RECEIVER_EMAIL = 'rickharrisIT@gmx.com'
 
 SITE_URL = 'https://ci-stream3project.herokuapp.com/'
 ALLOWED_HOSTS.append('ci-stream3project.herokuapp.com')
