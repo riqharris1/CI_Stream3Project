@@ -30,6 +30,7 @@ from threads import api_views as thread_api_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
+    
 
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
@@ -79,7 +80,9 @@ urlpatterns = [
     url(r'^post/update/(?P<pk>[\d+]+)/$',
         thread_api_views.PostUpdateView.as_view(), name="update-poll"),
     url(r'post/delete/(?P<pk>[\d]+)/$',
-        thread_api_views.PostDeleteView.as_view(), name='delete-poll')
+        thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
+
+    url(r'^issue tracker/$', include('todo.urls'))
 ]
 
 if settings.DEBUG:
