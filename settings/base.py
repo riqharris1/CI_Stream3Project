@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'paypal.standard.ipn',
     'debug_toolbar',
+    'todo',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'

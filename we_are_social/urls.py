@@ -26,10 +26,13 @@ from accounts.views import register, profile, login, logout, \
 from threads import views as forum_views
 from polls import api_views
 from threads import api_views as thread_api_views
+from todo import views as todo_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
+    url(r'^todo/', todo_views.TodoView),
+    #url(r'^todo/$', ('todo.urls')),
     #url(r'^todo/$', include('todo.urls')),
     #url(r'^issuetracker/$', include('django_todo.urls')),
     # Auth URLs
