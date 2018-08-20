@@ -21,6 +21,8 @@ class Todo(models.Model):
     Contains the `user`, `title`, `description`, `status` and `updated` fields
     for a Todo item
     """
+    #user = models.ForeignKey(base.AUTH_USER_MODEL)
+    #user = models.ForeignKey(base.AUTH_USER_MODEL, default='')
     user = models.ForeignKey(base.AUTH_USER_MODEL, default=1)
     #user = models.ForeignKey(AUTH_USER_MODEL, default=1)
     #user = models.ForeignKey(User, default=1)
