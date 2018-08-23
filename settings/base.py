@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     'debug_toolbar',
     'todo',
-    'bugtracker',
+    #'bugtracker',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
