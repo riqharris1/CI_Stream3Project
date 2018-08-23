@@ -15,9 +15,8 @@ class TodoView(APIView):
     """
     permission_classes = (IsAuthenticated,)
     # Code snippet truncated for brevity
-    #def put(request):
-    #def put(request, pk):
-    def put(self, request, pk):
+ 
+    def put(self, request, pk=None):
         """
         Handle PUT request for the `/todo/` endpoint.
  
@@ -41,8 +40,7 @@ class TodoView(APIView):
         else:
             serializer.save()
             return Response(serializer.data)
-    #def get(request):
-    #def get(self, request):
+
     def get(self, request, pk=None):
         """
         Handle the GET request for the `/todo/` endpoint.
@@ -78,8 +76,7 @@ class TodoView(APIView):
             return Response(status=status.HTTP_404_NOT_FOUND)
  
     # Code snippet truncated for brevity
-    #def delete(request):
-    #def delete(self, request):
+ 
     def delete(self, request, pk):
         """
         Handle DELETE request for the `/todo/` endpoint.
@@ -92,7 +89,7 @@ class TodoView(APIView):
         todo = Todo.objects.get(id=pk)
         todo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-    #def post(request):
+
     def post(self, request):
         """
         Handle the POST request for the `/todo/` endpoint.

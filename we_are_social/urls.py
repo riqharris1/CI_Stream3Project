@@ -32,7 +32,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
     url(r'^todo/', todo_views.TodoView),
-    #url(r'^todo/$', ('todo.urls')),
+    #url(r'^todo/', ('todo.urls')),
     #url(r'^todo/$', include('todo.urls')),
     #url(r'^issuetracker/$', include('django_todo.urls')),
     # Auth URLs
