@@ -31,9 +31,9 @@ from todo import views as todo_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
-    url(r'^todo/', todo_views.TodoView),
+    #url(r'^todo/', todo_views.TodoView),
     #url(r'^todo/', ('todo.urls')),
-    #url(r'^todo/$', include('todo.urls')),
+    url(r'^todo/$', include('todo.urls')),
     #url(r'^issuetracker/$', include('django_todo.urls')),
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
@@ -85,6 +85,9 @@ urlpatterns = [
     url(r'post/delete/(?P<pk>[\d]+)/$',
         thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
 
+    # API
+    #url(r'^todo/', include('todo.urls')),
+    #url(r'^accounts/', include('accounts.urls'))
     
 ]
 

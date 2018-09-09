@@ -2,6 +2,7 @@ from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 
 from accounts.forms import UserRegistrationForm, UserLoginForm
+from django.core.urlresolvers import reverse
 #from django.urls import reverse
 #from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
@@ -14,7 +15,6 @@ from accounts.models import User
 import stripe
 import arrow
 import json
-
 stripe.api_key = settings.STRIPE_SECRET
 
 
