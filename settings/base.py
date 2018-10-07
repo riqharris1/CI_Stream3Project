@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'rest_framework',
     'paypal.standard.ipn',
-    #'debug_toolbar',
+    'debug_toolbar',
     'todo',
     #'bugtracker',
 ]
