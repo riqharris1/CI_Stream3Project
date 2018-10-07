@@ -11,9 +11,11 @@ DEBUG = False
 #DATABASES['default'] =  dj_database_url.config()
 DATABASES = {
     'default': {
+        'default': dj_database_url.config('CLEARDB_AMBER_URL'),
+        #'default': dj_database_url.config('CLEARDB_DATABASE_URL'),
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR ,'db.sqlite3'),
-        'default': dj_database_url.config('CLEARDB_DATABASE_URL'),
+        
     }
 }    
     
