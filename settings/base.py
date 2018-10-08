@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    #'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'rest_framework',
     'paypal.standard.ipn',
-    'debug_toolbar',
+    #'debug_toolbar',
     'todo',
     #'bugtracker',
 ]
