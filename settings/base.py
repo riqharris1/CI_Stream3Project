@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'threads',
     'polls',
     #'we_are_social',
+    'south',
     
     'rest_framework',
     'paypal.standard.ipn',
