@@ -5,7 +5,7 @@ import dj_database_url
 
 
 
-DEBUG = False
+DEBUG = True
 
 # Load the ClearDB connection details from the environment variable
 #DATABASES['default'] =  dj_database_url.config()
