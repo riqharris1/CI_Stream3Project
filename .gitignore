@@ -4,3 +4,4 @@ staticfiles
 .env
 ci-stream3project/local_settings.py
 db.sqlite3
+settings_local
