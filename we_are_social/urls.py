@@ -33,7 +33,7 @@ urlpatterns = [
     url(r'^$', views.get_index),
     #url(r'^todo/', todo_views.TodoView),
     #url(r'^todo/', ('todo.urls')),
-    url(r'^todo/$', include('todo.urls')),
+    url(r'^todo/', include('todo.urls')),
     #url(r'^issuetracker/$', include('django_todo.urls')),
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
