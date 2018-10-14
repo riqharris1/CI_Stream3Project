@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
-from django.core.urlresolvers import reverse
+#from django.core.urlresolvers import reverse
+from django..urls import reverse
 from django.template.context_processors import csrf
 from django.forms import formset_factory
 from threads.models import Subject, Post, Thread

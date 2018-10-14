@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 
 from accounts.forms import UserRegistrationForm, UserLoginForm
 #from django.core.urlresolvers import reverse
-#from django.urls import reverse
+from django.urls import reverse
 #from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
