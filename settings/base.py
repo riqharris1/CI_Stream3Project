@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django_forms_bootstrap',
-    'django.core.urlresolvers',
+    #'django.core.urlresolvers',
     'tinymce',
     'emoticons',
     'disqus',
