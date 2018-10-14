@@ -1,0 +1,18 @@
+[
+{
+    "model": "sessions.session",
+    "fields": {
+        "session_data": "1",
+        "expire_date": null
+    },
+    "pk": "1"
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    },
+    "pk": 1
+}
+]
