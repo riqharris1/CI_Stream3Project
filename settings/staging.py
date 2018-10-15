@@ -36,8 +36,8 @@ PAYPAL_NOTIFY_URL = 'https://ci-stream3project.herokuapp.com/'
 PAYPAL_RECEIVER_EMAIL = 'rickharrisIT@gmx.com'
 
 SITE_URL = 'https://ci-stream3project.herokuapp.com/'
-ALLOWED_HOSTS.append('ci-stream3project.herokuapp.com','ci-stream3project-rickharris.herokuapp.com')
-
+#ALLOWED_HOSTS.append('ci-stream3project.herokuapp.com')
+ALLOWED_HOSTS.append('ci-stream3project-rickharris.herokuapp.com')
 # Log DEBUG information to the console
 LOGGING = {
     'version': 1,
