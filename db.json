@@ -1,0 +1,11 @@
+[
+{
+    "model": "django.site",
+    "fields": {
+        "id": "1",
+        "domain": "example.com",
+	"name":"abc"
+    },
+    "pk": 1
+}
+]
