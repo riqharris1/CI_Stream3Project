@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     
     'rest_framework',
     'paypal.standard.ipn',
-    #'debug_toolbar',
+    'django_debug_toolbar',
     'todo',
     #'bugtracker',
 ]
