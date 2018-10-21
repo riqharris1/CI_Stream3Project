@@ -1,8 +1,10 @@
 [
-    {
+{
+    "model": "sites.site",
+    "fields": {
         "domain": "example.com",
-        "id": "2",
         "name": "example.com"
-    }
+    },
+    "pk": 2
+}
 ]
-
