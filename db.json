@@ -1,68 +1,9 @@
 [
 {
-    "model": "sessions.session",
-    "fields": {
-        "session_data": "ZGZmOGQ2MzZhOTcyZGZiYmU4MTRjZGY4N2E5YTE5Y2ZhYTIzOTg1Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkY2E5MjQ4NjIwMWRhYTQyMjA0NDA5OGUyZmJlODg0NDNjMzhmNWExIn0=",
-        "expire_date": "2018-11-04T20:47:26.676Z"
-    },
-    "pk": "x8k5uakay7tg6vvsopq03c5pe98dmplw"
-},
-{
     "model": "sites.site",
     "fields": {
         "domain": "example.com",
         "name": "example.com"
-    },
-    "pk": 1
-},
-{
-    "model": "accounts.user",
-    "fields": {
-        "password": "pbkdf2_sha256$20000$YQd7NDwyZJAO$8U2no62ROhVjdE/ef3SkM0A+9b4HVYPZOv9DdiJ2wDs=",
-        "last_login": "2018-10-21T20:47:26.639Z",
-        "is_superuser": true,
-        "username": "rickharrisit@gmx.com",
-        "first_name": "",
-        "last_name": "",
-        "email": "rickharrisit@gmx.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2018-10-21T20:47:05.230Z",
-        "stripe_id": "",
-        "subscription_end": "",
-        "groups": [],
-        "user_permissions": []
-    },
-    "pk": 1
-},
-{
-    "model": "todo.todo",
-    "fields": {
-        "user": [
-            "rickharrisit@gmx.com"
-        ],
-        "title": "a",
-        "description": "d",
-        "status": "Todo",
-        "updated": "2018-10-21T20:50:06Z"
-    },
-    "pk": 1
-},
-{
-    "model": "admin.logentry",
-    "fields": {
-        "action_time": "2018-10-21T20:50:16.179Z",
-        "user": [
-            "rickharrisit@gmx.com"
-        ],
-        "content_type": [
-            "todo",
-            "todo"
-        ],
-        "object_id": "1",
-        "object_repr": "Todo object",
-        "action_flag": 1,
-        "change_message": ""
     },
     "pk": 1
 }

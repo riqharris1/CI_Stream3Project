@@ -35,6 +35,7 @@ django-paypal = "*"
 configparser = "*"
 mysqlclient = "*"
 dj-database-url = "*"
+psycopg2 = "*"
 
 
 
