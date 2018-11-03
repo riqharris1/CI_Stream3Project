@@ -1,2 +1,17 @@
 [
+    {
+        "date_joined": "2018-10-28 09:38:19.151546",
+        "email": "rickharrisit@gmx.com",
+        "first_name": "",
+        "id": "3",
+        "is_active": "1",
+        "is_staff": "1",
+        "is_superuser": "1",
+        "last_login": "2018-10-28 09:39:33.148278",
+        "last_name": "",
+        "password": "pbkdf2_sha256$120000$Sp96HEvNSYa9$pqCJtjj4OiC/NixA+5xfxBPAbcQ9ZsyS/AKo+9Zx4Z4=",
+        "stripe_id": "",
+        "subscription_end": "",
+        "username": "rickharrisit@gmx.com"
+    }
 ]
