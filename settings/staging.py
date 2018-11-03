@@ -13,8 +13,8 @@ DATABASES = {
     'default': {
         #'default': dj_database_url.config('CLEARDB_DATABASE_URL'),
         #'default': dj_database_url.config('CLEARDB_IVORY_URL'),
-        #'default': dj_database_url.config('CLEARDB_YELLOW_URL'),
-        'default': dj_database_url.config('CLEARDB_PURPLE_URL'),
+        'default': dj_database_url.config('CLEARDB_YELLOW_URL'),
+        #'default': dj_database_url.config('CLEARDB_PURPLE_URL'),
         #'default': dj_database_url.config('DATABASE_URL'),
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR , 'CLEARDB_YELLOW_URL'),
