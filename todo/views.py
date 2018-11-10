@@ -13,7 +13,7 @@ class TodoView(APIView):
     TodoView used to handle the incoming requests relating to 
     `todo` items
     """
-    permission_classes = (IsAuthenticated,)
+    #permission_classes = (IsAuthenticated,)
     # Code snippet truncated for brevity
  
     def put(self, request, pk=None):
