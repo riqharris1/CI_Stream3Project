@@ -5,9 +5,14 @@ This project allows users to submit requests for bug fixes and new features.
 Description of the functionality of the project, as well as the technologies used: 
 The project has an issue tracker page,a new features page and a user profile page.
 It uses Python,Django,HTML and an SQL database
+issue tracker page-allows users to create issues(issue type:task,history,bug,new feature)/requests to be submitted and viewed.
+new features page-allows users to view and pay for new features
+Profile page-show's username,stripe id,subscription details
 
 How the project was deployed, what was kept and what was changed to fit requirements:
 The project is deployed on Heroku and Github and is based on code from the code institute sample project,Django apps such as accounts and products were kept and some python modules were upgraded to ensure compatability with the hosting site.
+
+
 
 Installation requirements:
 Required python modules:
