@@ -13,14 +13,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% block head_js %}{% endblock %}
-    <!-- {% block dict %}{% endblock %} -->
 </head>
 <body>
 <div class="container">
     <div class="masthead">
         <ul class="nav nav-pills pull-right">
             <li><a href="/">Home</a></li>
-            <li><a href="/admin/todo/todo/">Issue Tracker</a></li>
+            <li><a href="/admin/todo/todo">Issue Tracker</a></li>
             <li><a href="/products/">New Features</a></li>
             <!--  <li><a href="/magazines/">Magazines</a></li>
             <li><a href="/forum/">Forum</a></li>
@@ -54,7 +53,11 @@
         {% block content %}
         {% endblock %}
     </div>
-
+    <form action="/your-name/" method="post">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
     <hr>
 
     <div class="footer">

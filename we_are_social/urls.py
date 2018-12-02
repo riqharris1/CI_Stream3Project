@@ -31,9 +31,9 @@ from todo import views as todo_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
-    #url(r'^todo/', todo_views.TodoView),
+    url(r'^todo/', todo_views.TodoView),
     #url(r'^todo/', ('todo.urls')),
-    url(r'^todo/', include('todo.urls')),
+    #url(r'^todo/', include('todo.urls')),
     #url(r'^issuetracker/$', include('django_todo.urls')),
     # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
@@ -54,6 +54,7 @@ urlpatterns = [
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/$', product_views.all_products),
     url(r'^magazines/$', magazine_views.all_magazines),
+    #url(r'^todo/$', todo_views.TodoView(APIView),
 
     # Blog URLs
     # url(r'^blog/', include('reusable_blog.urls')),

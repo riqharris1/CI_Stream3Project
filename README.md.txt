@@ -12,7 +12,7 @@ Profile page-show's username,stripe id,subscription details
 How the project was deployed, what was kept and what was changed to fit requirements:
 The project is deployed on Heroku and Github and is based on code from the code institute sample project,Django apps such as accounts and products were kept and some python modules were upgraded to ensure compatability with the hosting site.
 
-
+Models:comments model,
 
 Installation requirements:
 Required python modules:
