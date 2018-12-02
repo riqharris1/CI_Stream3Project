@@ -5,7 +5,7 @@ This project allows users to submit requests for bug fixes and new features.
 Description of the functionality of the project, as well as the technologies used: 
 The project has an issue tracker login page,a new features page and a user profile page.
 It uses Python,Django,HTML and a database.
-The database was created by using django models and migrated to SQL on the local machine before being migrated to Heroku. 
+The database was created by using django models and migrated to SQL on the local machine before being migrated to Heroku(ClearDB). 
 
 Links 
 issue tracker login page-allows users to login and create issues(issue type:task,history,bug,new feature)/requests to be submitted and viewed.
