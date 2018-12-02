@@ -20,7 +20,7 @@
     <div class="masthead">
         <ul class="nav nav-pills pull-right">
             <li><a href="/">Home</a></li>
-            <li><a href="/admin/todo/todo/">Issue Tracker</a></li>
+            <li><a href="/admin/todo/todo/">Issue Tracker login</a></li>
             <li><a href="/products/">New Features</a></li>
             <!--  <li><a href="/magazines/">Magazines</a></li>
             <li><a href="/forum/">Forum</a></li>
@@ -32,7 +32,7 @@
                 <li><a href="{% url 'logout' %}">Log Out</a></li>
             {% else %}
                 <li><a href="{% url 'register' %}">Register</a></li>
-                <li><a href="{% url 'login' %}">Log In</a></li>
+                <!-- <li><a href="{% url 'login' %}">Log In</a></li> -->
             {% endif %}
         </ul>
         <h1><span class="fui-settings-16 muted">Unicorn Attractor</span></h1>
