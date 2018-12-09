@@ -9,11 +9,15 @@ Django is a python framework that allows access to libraries.
 The database was created by using django models and migrated to SQL on the local machine before being migrated to Heroku(ClearDB). 
 
 Links 
-issue tracker login page-allows users to login and create issues(issue type:task,history,bug,new feature)/requests to be submitted and viewed.
+Issue tracker login page-
+allows users to login and create issues(issue type:task,history,bug,new feature)/requests to be submitted and viewed.
 once,logged in,click view site to view other pages.
-new features page-allows users to view and pay for new features.
 
-Profile page-show's username,stripe id,subscription details.
+New features page-
+allows users to view and pay for new features selected for further development .
+
+Profile page-
+show's username,stripe id,subscription details.
 
 How the project was deployed, what was kept and what was changed to fit requirements:
 The working project is deployed on Heroku and project code on Github and is based on code from the code institute sample project,Django apps such as accounts and products were kept and some python modules were upgraded to ensure compatability with the hosting site.

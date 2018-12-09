@@ -1,6 +1,5 @@
 from django.test import TestCase
 from home.views import get_index
-#from django.core.urlresolvers import resolve
 from django.urls import reverse
 from django.shortcuts import render_to_response
 from accounts.models import User

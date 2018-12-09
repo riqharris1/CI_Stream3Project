@@ -1,4 +1,4 @@
-"""we_are_social URL Configuration
+"""Stream3Project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -32,10 +32,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
     url(r'^todo/', todo_views.TodoView),
-    #url(r'^todo/', ('todo.urls')),
-    #url(r'^todo/', include('todo.urls')),
-    #url(r'^issuetracker/$', include('django_todo.urls')),
-    # Auth URLs
     url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^register/$', register, name='register'),
     url(r'^profile/$', profile, name='profile'),
@@ -54,10 +50,7 @@ urlpatterns = [
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/', product_views.all_products),
     url(r'^magazines/$', magazine_views.all_magazines),
-    #url(r'^todo/$', todo_views.TodoView(APIView),
-
-    # Blog URLs
-    # url(r'^blog/', include('reusable_blog.urls')),
+    
 
     # Forum URLs
     url(r'^forum/$', forum_views.forum),
@@ -86,10 +79,7 @@ urlpatterns = [
     url(r'post/delete/(?P<pk>[\d]+)/$',
         thread_api_views.PostDeleteView.as_view(), name='delete-poll'),
 
-    # API
-    #url(r'^todo/', include('todo.urls')),
-    #url(r'^accounts/', include('accounts.urls'))
-    
+   
 ]
 
 # if settings.DEBUG:
