@@ -1,4 +1,9 @@
 ﻿Issue tracker
+
+Project URL:https://ci-stream3project-rickharris.herokuapp.com/
+Project deployed on Heroku:https://dashboard.heroku.com/apps/ci-stream3project-rickharris
+Source code:https://github.com/riqharris1/CI_Stream3Project,includes PDF mockup
+
 what the project does and the need that it fulfils:
 This project allows users to submit requests for bug fixes and new features.
 
