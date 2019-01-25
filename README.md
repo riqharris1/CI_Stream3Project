@@ -1,4 +1,4 @@
-﻿Issue tracker
+﻿Stream 3 Project:Issue tracker
 
 Project URL:https://ci-stream3project-rickharris.herokuapp.com/
 Project deployed on Heroku:https://dashboard.heroku.com/apps/ci-stream3project-rickharris
@@ -26,7 +26,7 @@ show's username,stripe id,subscription details.
 
 How the project was deployed, what was kept and what was changed to fit requirements:
 The working project is deployed on Heroku and project code on Github and is based on code from the code institute sample project,Django apps such as accounts and products were kept and some python modules were upgraded to ensure compatability with the hosting site.
-
+Unit tests have been added to some modules.
 
 
 Installation requirements:
